@@ -1,0 +1,67 @@
+<div class="page" data-page="calc" ng-controller="calc">
+	<!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-inner">
+            	<div class="left">
+            		<a href="index.html" class="link">
+            			<i class="icon icon-back"></i>
+            		</a>
+            	</div>
+                <div class="center">Calculator</div>
+                <div class="right">
+                    <a href="#" class="link icon-only open-panel">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- navbar -->
+
+    <div class="page-content">
+    	<div class="content-block">
+    		<div class="list-block">
+                <ul>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">Angka 1</div>
+                                <div class="item-input">
+                                    <input type="text" name="text" ng-model="angka1" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">Angka 2</div>
+                                <div class="item-input">
+                                    <input type="text" name="text" ng-model="angka2" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>      
+            </div>
+    	</div>
+
+        <p class="buttons-row content-block">
+            <a href="#" class="button button-fill button-raised color-red" ng-click="operasi('kali')">Kali</a>
+            <a href="#" class="button button-fill button-raised color-green" ng-click="operasi('bagi')">Bagi</a>
+            <a href="#" class="button button-fill button-raised color-blue" ng-click="operasi('tambah')">Tambah</a>
+            <a href="#" class="button button-fill button-raised color-orange" ng-click="operasi('kurang')">Kurang</a>
+        </p>
+
+        <div class="list-block content-block">
+            <div class="item-content">
+                <div class="item-inner">
+                    <div class="item-title label">Hasil</div>
+                        <div class="item-input">
+                        <input type="text" placeholder="0" ng-model="hasil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="AngularApp">
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.min.css">
+        <!-- Path to Framework7 color related styles, Material Theme -->
+ <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+       <!--  fonts Awesome -->
+ <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+        <!-- Path to your custom app styles-->
+ <link rel="stylesheet" href="css/my-app.css">
+        <title>Framework7 Angular</title>
+    </head>
+    <body class="theme-red" ng-controller="RootCtrl">
+
+<div class="views">
+    <div class="view view-main">
+        <div class="pages navbar-fixed">
+
+  <!-- Panels Overlay -->
+<div class="panel-overlay"></div> 
+  <!-- Left Panel with Reveal effect -->
+  <div class="panel panel-left panel-cover">
+    <div class="content-block">
+      <p>Ini adalah panel samping</p>
+      <p><a href="index.html" class="link close-panel">Home</a></p>
+      <p><a href="about.html" class="link close-panel">About</a></p>
+      <p><a href="calc.html" class="link close-panel">Calc</a></p>
+      <p><a href="local.html" class="link close-panel">Local Data</a></p>
+      <p><a href="news.html" class="link close-panel">Berita</a></p>
+    </div>
+  </div>
+  <!-- Panels Overlay -->
+
+
+            <div class="page" data-page="index">
+            <!-- navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center">AngularJS Apps</div>
+                        <div class="right">
+                            <a href="#" class="link icon-only open-panel">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!-- navbar -->
+
+                <!-- isi -->
+                <div class="page-content">
+                    <div class="content-block-title">
+                        Uji Coba AngularJS di Framework7
+                    </div>
+
+                    <div class="list-block content-block">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Input</div>
+                                        <div class="item-input">
+                                            <input type="text" name="text" ng-model="input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
+                    </div>
+
+                    <div class="content-block">
+                        {{input}}
+                    </div>
+
+                    
+                </div>
+                <!-- isi -->
+
+            </div>
+        </div>        
+    </div>
+</div>
+
+<!-- Path to JQUERY js-->
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<!-- Path ANGULARJS -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path framework7 angular -->
+<script type="text/javascript" src="js/framework7.angular.hook.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+    </body>
+</html>

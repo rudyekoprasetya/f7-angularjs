@@ -1,0 +1,55 @@
+<div class="page" data-page="news" ng-controller="externalData">
+
+    <!-- Search Bar -->
+    <form class="searchbar" ng-show="isVisible">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search" ng-model="keyword">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    
+    <!-- Search Bar overlay-->
+    <div class="searchbar-overlay"></div>
+
+	<!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-inner">
+            	<div class="left">
+            		<a href="index.html" class="link">
+            			<i class="icon icon-back"></i>
+            		</a>
+            	</div>
+                <div class="center">External Data</div>
+                <div class="right">
+                    <a href="#" class="link icon-only" ng-click="showSearch()">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- navbar -->
+
+    <div class="page-content">
+
+    <div class="content-block-title">
+        Binding data dengan AngularJS RestAPI
+    </div>
+
+    	<div class="card demo-card-header-pic" ng-repeat="row in isiData | filter : keyword">
+          <div style="background-image:url({{row.urlToImage}})" valign="bottom" class="card-header color-white no-border">{{row.title}}</div>
+          <div class="card-content">
+            <div class="card-content-inner">
+              <p class="color-gray">{{row.publishedAt}}</p>
+              <p>{{row.description}}</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="link">Like</a>
+            <a href="{{row.url}}" class="link external" target="_blank">Read more</a>
+          </div>
+        </div>
+
+
+    </div>
+</div>
