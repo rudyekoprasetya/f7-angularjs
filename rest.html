@@ -1,0 +1,43 @@
+<div class="page" data-page="rest" ng-controller="RestAPI">
+	<!-- navbar -->
+        <div class="navbar">
+            <div class="navbar-inner">
+            	<div class="left">
+            		<a href="index.html" class="link">
+            			<i class="icon icon-back"></i>
+            		</a>
+            	</div>
+                <div class="center">Rest API Local</div>
+                <div class="right">
+                    <a href="#" class="link icon-only open-panel">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!-- navbar -->
+
+    <div class="page-content">
+        <div class="content-block-title">Rest API Localhost</div>
+    	<div class="data-table data-table-init card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th class="label-cell">Nama</th>
+                        <th class="label-cell">Alamat</th>
+                        <th class="numeric-cell">Gaji</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in isiData">
+                        <td>{{row.id}}</td>
+                        <td class="label-cell">{{row.nama}}</td>
+                        <td class="label-cell">{{row.alamat}}</td>
+                        <td class="numeric-cell">{{row.gaji}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

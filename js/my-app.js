@@ -80,3 +80,16 @@ f7.controller("externalData", ["$scope","$http", function($scope,$http) {
 
 
 }]);
+
+f7.controller("RestAPI", ["$scope","$http", function($scope,$http) {
+   //tampilkan data
+    $scope.GetData=function(){
+        $http.get('http://localhost/belajar-angular/angular-bootstrap/belajar5/api/data.php?req=get').then(function(response){
+            console.log(response.data.message);
+            $scope.isiData=response.data.data;
+            // console.log($scope.isiData);
+        });
+    }
+    $scope.GetData();
+
+}]);
